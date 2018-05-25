@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Challenge Two</title>
+    <style media="screen">
+      div{
+        width: 500px;
+        height: 50px;
+        text-align: center;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="red" onclick="red()">red</div>
+    <div id="orange" onclick="orange">orange</div>
+    <div id="yellow" onclick="yellow">yellow</div>
+    <div id="green" onclick="green">green</div>
+    <div id="blue" onclick="blue">blue</div>
+    <div id="indigo" onclick="indigo">indigo</div>
+    <div id="violet" onclick="violet">violet</div>
+    <script type="text/javascript">
+    var rainbow = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+
+    var red = document.getElementById('red');
+    var orange = document.getElementById('orange');
+    var yellow = document.getElementById('yellow');
+    var green = document.getElementById('green');
+    var blue = document.getElementById('blue');
+    var indigo = document.getElementById('indigo');
+    var violet = document.getElementById('violet');
+
+    red.onclick = function(){
+      red.style.backgroundColor = "red";
+    }
+    orange.onclick = function(){
+      orange.style.backgroundColor = "orange";
+    }
+    yellow.onclick = function(){
+      yellow.style.backgroundColor = "yellow";
+    }
+    green.onclick = function(){
+      green.style.backgroundColor = "green";
+    }
+    blue.onclick = function(){
+      blue.style.backgroundColor = "blue";
+    }
+    indigo.onclick = function(){
+      indigo.style.backgroundColor = "indigo";
+    }
+    violet.onclick = function(){
+      violet.style.backgroundColor = "violet";
+    }
+
+    </script>
+  </body>
+</html>
