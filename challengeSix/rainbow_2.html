@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Challenge six</title>
+    <style media="screen">
+    body{
+      text-align: center;
+    }
+      div{
+        width: 700px;
+        height: 50px;
+        text-align: center;
+        margin-left: 26%;
+            }
+    </style>
+  </head>
+  <body>
+    <div id="red">red</div>
+    <div id="orange">prange</div>
+    <div id="yellow">yellow</div>
+    <div id="green">green</div>
+    <div id="blue">blue</div>
+    <div id="indigo">indigo</div>
+    <div id="violet">violet</div>
+    
+    <script type="text/javascript">
+      var rainbow = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+      console.log(rainbow);
+      for (let index=0; index<rainbow.length; index++) {
+        var color = document.getElementById(rainbow[index]+"");
+        color.style.backgroundColor=rainbow[index];
+      }
+    </script>
+  </body>
+</html>

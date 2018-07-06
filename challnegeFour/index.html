@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Challenge four</title>
+    <style media="screen">
+    body{
+      background-color: black;
+    }
+      p{
+        background-color: yellow;
+        font-size: 100px;
+        color: red;
+        font-family: cursive;
+        text-align: center;
+        border: solid 2px red;
+        border-radius: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="time"></p>
+    <script>
+// Setting the birthday
+var countDownDate = new Date("Apr 6, 2019 00:00:00").getTime();
+
+var x = setInterval(function() {
+// Getting the present date
+    var now = new Date().getTime();
+
+    var distance = countDownDate - now;
+// Calculating the days,hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("time").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("time").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+  </body>
+</html>

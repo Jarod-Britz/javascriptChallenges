@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Challenge five</title>
+    <style media="screen">
+      body{
+        margin-top: 10%;
+        text-align: center;
+      }
+      button{
+        width: 200px;
+        height: 50px;
+        color: red;
+        background-color: yellow;
+        font-size: 20px;
+        border-radius: 12px;
+      }
+      input{
+        text-align: center;
+        width: 300px;
+        height: 30px;
+        background-color: yellow;
+        color: red;
+        border-radius: 12px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="">
+      <input type="number" name="" value="" id="age"><br><br>
+      <button type="button" id="button" name="button" onclick=testAge()>Submit</button>
+    </div>
+    <div id="display">
+
+    </div>
+    <script type="text/javascript">
+    //get the age (input value) with js
+alert("Enter your age in the provided space")
+    //age function
+    function testAge(){
+      var ageField = document.getElementById('age')
+      var age = ageField.value;
+      var outputDiv=document.getElementById('display')
+// checking if age is less and equal to 6
+      if (Number(age)<=6) {
+      outputDiv.innerHTML = "You are still a baby";
+// checking if age is less and equal to 13
+    }else if(age<=13){
+      outputDiv.innerHTML = "You can go onto the site";
+// checking if age is less and equal to 16
+    }else if(age<=16){
+      outputDiv.innerHTML = "You are under 16";
+// checking if age is less and equal to 18
+    }else if(age<=18){
+      outputDiv.innerHTML = "You are almost 18";
+// checking if age is less and equal to 21
+    }else if(age<=21){
+      outputDiv.innerHTML = "Getting old now";
+// checking if age greater and equal to 21 and less and equal to 23
+    }else if(age<=29&&age>=21){
+      outputDiv.innerHTML = "Looking lekker for work";
+// checking if age is greater and equal to 30
+    }else if(age>=30){
+      outputDiv.innerHTML = "You need to retire now";
+    }
+  }
+
+
+//check for the following ages 6, 13, 16, 18, 21, 23, 30+
+    </script>
+  </body>
+</html>
